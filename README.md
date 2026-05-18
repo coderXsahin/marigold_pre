@@ -2,6 +2,9 @@
 
 Full-stack flower disease detection per [PRD.md](./PRD.md).
 
+## DEMO
+https://marigoldpre-crcvwkffp48xbu3wharjwr.streamlit.app/
+
 ## Quick start (local dev)
 
 ### 1. Split dataset (train 70% / val 15% / test 15%)
