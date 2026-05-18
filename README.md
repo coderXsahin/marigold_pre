@@ -38,6 +38,17 @@ npm run frontend
 
 Open **http://localhost:5173**
 
+## Deploy on Streamlit
+
+**Guide:** [deploy/STREAMLIT.md](./deploy/STREAMLIT.md)
+
+```powershell
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+On [Streamlit Cloud](https://share.streamlit.io/), set main file to `streamlit_app.py` and add model weights via **Git LFS** or `MODEL_URL` in Secrets.
+
 ## Deploy (Docker)
 
 **Full guide:** [deploy/DEPLOY.md](./deploy/DEPLOY.md)
