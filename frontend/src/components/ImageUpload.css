@@ -1,0 +1,95 @@
+.upload-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dropzone {
+  display: block;
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
+  min-height: 240px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  position: relative;
+}
+
+.dropzone:hover:not(.disabled),
+.dropzone.drag-over {
+  border-color: var(--primary);
+  background: #f0faf6;
+  box-shadow: inset 0 0 0 1px rgba(27, 94, 74, 0.15);
+}
+
+.dropzone.disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.dropzone.has-preview {
+  border-style: solid;
+  border-color: var(--border);
+}
+
+.dropzone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.upload-illustration {
+  width: 56px;
+  height: 56px;
+  color: var(--primary);
+  opacity: 0.7;
+  margin-bottom: 0.75rem;
+}
+
+.upload-illustration svg {
+  width: 100%;
+  height: 100%;
+}
+
+.drop-title {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+}
+
+.preview {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.change-hint {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  background: linear-gradient(transparent, rgba(26, 46, 36, 0.75));
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.error {
+  color: var(--disease);
+  font-size: 0.875rem;
+  margin: 0;
+}

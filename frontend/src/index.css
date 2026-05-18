@@ -1,0 +1,78 @@
+:root {
+  --bg: #f4f1ea;
+  --bg-pattern: #ebe6dc;
+  --surface: #ffffff;
+  --surface-muted: #f8f6f1;
+  --border: #ddd6c8;
+  --border-strong: #c4b9a4;
+  --text: #1a2e24;
+  --text-muted: #5c6b62;
+  --primary: #1b5e4a;
+  --primary-light: #2a7d63;
+  --accent: #d4920a;
+  --accent-soft: #fef3d6;
+  --healthy: #2e7d4a;
+  --healthy-bg: #e8f5ec;
+  --disease: #c0392b;
+  --disease-bg: #fdecea;
+  --warning: #b45309;
+  --warning-bg: #fff7ed;
+  --sidebar: #143d30;
+  --sidebar-text: #d4e8df;
+  --sidebar-active: rgba(255, 255, 255, 0.12);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 4px 24px rgba(26, 46, 36, 0.08);
+  --shadow-lg: 0 12px 40px rgba(26, 46, 36, 0.12);
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(212, 146, 10, 0.08), transparent 40%),
+    radial-gradient(circle at 0% 100%, rgba(27, 94, 74, 0.06), transparent 45%),
+    var(--bg);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+code {
+  font-family: ui-monospace, "Cascadia Code", monospace;
+  font-size: 0.85em;
+  background: var(--surface-muted);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/history.json
+ml/model.h5
+ml/model.weights.h5
+ml/best_weights.weights.h5
+dataset_split/
+.DS_Store
+*.log

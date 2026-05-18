@@ -1,0 +1,17 @@
+{
+  "architecture": "mobilenet_v2",
+  "img_size": [
+    224,
+    224
+  ],
+  "preprocessing": "mobilenet_v2",
+  "class_names": [
+    "Healthy",
+    "Leaf spot",
+    "Bud rot",
+    "Botrytis blight",
+    "Foliage blight",
+    "Stem rot",
+    "White mold"
+  ]
+}

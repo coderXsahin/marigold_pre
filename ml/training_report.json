@@ -1,0 +1,107 @@
+{
+  "train": {
+    "split": "train",
+    "loss": 0.4542182385921478,
+    "accuracy": 0.8585858345031738,
+    "per_class": {
+      "Healthy": {
+        "samples": 14,
+        "accuracy": 0.0
+      },
+      "Leaf spot": {
+        "samples": 14,
+        "accuracy": 0.14285714285714285
+      },
+      "Bud rot": {
+        "samples": 14,
+        "accuracy": 0.14285714285714285
+      },
+      "Botrytis blight": {
+        "samples": 14,
+        "accuracy": 0.14285714285714285
+      },
+      "Foliage blight": {
+        "samples": 14,
+        "accuracy": 0.07142857142857142
+      },
+      "Stem rot": {
+        "samples": 15,
+        "accuracy": 0.0
+      },
+      "White mold": {
+        "samples": 14,
+        "accuracy": 0.21428571428571427
+      }
+    }
+  },
+  "validation": {
+    "split": "validation",
+    "loss": 0.7847765684127808,
+    "accuracy": 0.8571428656578064,
+    "per_class": {
+      "Healthy": {
+        "samples": 3,
+        "accuracy": 1.0
+      },
+      "Leaf spot": {
+        "samples": 3,
+        "accuracy": 0.3333333333333333
+      },
+      "Bud rot": {
+        "samples": 3,
+        "accuracy": 1.0
+      },
+      "Botrytis blight": {
+        "samples": 3,
+        "accuracy": 1.0
+      },
+      "Foliage blight": {
+        "samples": 3,
+        "accuracy": 1.0
+      },
+      "Stem rot": {
+        "samples": 3,
+        "accuracy": 1.0
+      },
+      "White mold": {
+        "samples": 3,
+        "accuracy": 0.6666666666666666
+      }
+    }
+  },
+  "test": {
+    "split": "test",
+    "loss": 0.8909642100334167,
+    "accuracy": 0.6190476417541504,
+    "per_class": {
+      "Healthy": {
+        "samples": 3,
+        "accuracy": 0.6666666666666666
+      },
+      "Leaf spot": {
+        "samples": 3,
+        "accuracy": 1.0
+      },
+      "Bud rot": {
+        "samples": 3,
+        "accuracy": 1.0
+      },
+      "Botrytis blight": {
+        "samples": 3,
+        "accuracy": 0.3333333333333333
+      },
+      "Foliage blight": {
+        "samples": 3,
+        "accuracy": 0.3333333333333333
+      },
+      "Stem rot": {
+        "samples": 3,
+        "accuracy": 0.6666666666666666
+      },
+      "White mold": {
+        "samples": 3,
+        "accuracy": 0.3333333333333333
+      }
+    }
+  }
+}
