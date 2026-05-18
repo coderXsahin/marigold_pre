@@ -2,7 +2,7 @@
 
 Full-stack flower disease detection per [PRD.md](./PRD.md).
 
-## Quick start
+## Quick start (local dev)
 
 ### 1. Split dataset (train 70% / val 15% / test 15%)
 
@@ -38,6 +38,17 @@ npm run frontend
 
 Open **http://localhost:5173**
 
+## Deploy (Docker)
+
+**Full guide:** [deploy/DEPLOY.md](./deploy/DEPLOY.md)
+
+```powershell
+# Requires ml/model.weights.h5 and Docker Desktop
+docker compose up --build
+```
+
+Open **http://localhost:8080**
+
 ## Project layout
 
 ```
@@ -47,6 +58,7 @@ ml/                # Model weights + FastAPI server
 frontend/          # React dashboard
 backend/           # Node.js API
 notebooks/         # split_dataset.py, train_model.py, Colab notebook
+deploy/            # Docker nginx + deployment docs
 ```
 
 ## Notes

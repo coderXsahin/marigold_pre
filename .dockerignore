@@ -1,0 +1,12 @@
+**/node_modules
+**/.git
+**/dist
+dataset/
+dataset_split/
+**/__pycache__
+*.pyc
+.venv/
+venv/
+.env
+*.log
+.DS_Store

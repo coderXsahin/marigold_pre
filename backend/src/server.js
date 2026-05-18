@@ -10,10 +10,12 @@ import { v4 as uuidv4 } from "uuid";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
-const UPLOADS_DIR = path.join(ROOT, "uploads");
-const HISTORY_PATH = path.join(ROOT, "history.json");
+const DATA_DIR = process.env.DATA_DIR || ROOT;
+const UPLOADS_DIR = process.env.UPLOADS_DIR || path.join(ROOT, "uploads");
+const HISTORY_PATH = path.join(DATA_DIR, "history.json");
 const ML_URL = process.env.ML_URL || "http://127.0.0.1:8000";
 const PORT = process.env.PORT || 3001;
+const HOST = process.env.HOST || "0.0.0.0";
 
 const ALLOWED_MIME = new Set(["image/jpeg", "image/png", "image/jpg"]);
 
@@ -54,6 +56,7 @@ async function readHistory() {
 }
 
 async function writeHistory(entries) {
+  await fs.mkdir(DATA_DIR, { recursive: true });
   await fs.writeFile(HISTORY_PATH, JSON.stringify(entries, null, 2));
 }
 
@@ -132,8 +135,8 @@ app.use((err, _req, res, _next) => {
   res.status(500).json({ error: err.message || "Server error" });
 });
 
-const server = app.listen(PORT, () => {
-  console.log(`Backend running on http://localhost:${PORT}`);
+const server = app.listen(PORT, HOST, () => {
+  console.log(`Backend running on http://${HOST}:${PORT}`);
 });
 
 server.on("error", (err) => {

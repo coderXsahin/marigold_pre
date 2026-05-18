@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+.venv
+venv
+model.weights.h5
+model.h5
+best_weights.weights.h5
+*.log
