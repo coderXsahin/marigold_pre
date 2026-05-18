@@ -47,7 +47,10 @@ The app downloads the file on first run.
 4. Set:
    - **Main file path:** `streamlit_app.py`
    - **Branch:** `main`
-5. Click **Deploy** (first build may take 5–15 minutes because of TensorFlow).
+5. Under **Advanced settings**, set **Python version** to **3.11** (required for TensorFlow).
+6. Click **Deploy** (first build may take 5–15 minutes because of TensorFlow).
+
+If you see `installer returned a non-zero exit code`, use **Manage app → Reboot** after pulling the latest `environment.yml` fix.
 
 ## 4. Test locally first
 

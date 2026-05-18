@@ -1,5 +1,6 @@
+# Fallback if environment.yml is removed (use Python 3.11 in Streamlit Advanced settings)
 streamlit>=1.40.0
-tensorflow==2.18.0
-Pillow==11.1.0
-numpy>=1.26.0,<2.1.0
-scipy>=1.11.0
+tensorflow-cpu==2.16.2
+pillow>=10.0.0,<12.0.0
+numpy>=1.26.0,<2.0.0
+protobuf>=3.20,<6
