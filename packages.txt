@@ -1,2 +1,1 @@
-# libgl1 - not needed for Pillow-based image processing
-# libglib2.0-0 - causes dependency conflicts on Streamlit Cloud
+
